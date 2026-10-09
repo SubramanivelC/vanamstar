@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Vanamstar Android App Development</title>
+  <meta name="description" content="What Vanamstar builds: Native Android apps, Kotlin/Java expertise, UI/UX, optimization, and Play Store deployment support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+  <style>
+    html,body{margin:0;padding:0}
+    .glass{ background:linear-gradient(135deg,rgba(255,255,255,.04) 0%,rgba(255,255,255,.01) 100%); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,.06); }
+    .glass-strong{ background:linear-gradient(135deg,rgba(255,255,255,.08) 0%,rgba(255,255,255,.02) 100%); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,.10); }
+    .glow-green{ box-shadow:0 0 24px -4px rgba(61,220,132,.35),0 0 80px -8px rgba(61,220,132,.18); }
+    .glow-blue{ box-shadow:0 0 24px -4px rgba(0,242,254,.35),0 0 80px -8px rgba(0,242,254,.18); }
+    .btn-primary{ background:linear-gradient(135deg,#3DDC84 0%,#00F2FE 100%); box-shadow:0 6px 20px -6px rgba(61,220,132,.55); transition:transform .12s ease,box-shadow .12s ease; }
+    .btn-primary:hover{ transform:translateY(-3px) scale(1.02); box-shadow:0 12px 30px -8px rgba(61,220,132,.7); }
+    .btn-primary:active{ transform:translateY(0) scale(.99); }
+    .card-hover{ transition:transform .22s ease,box-shadow .22s ease; }
+    .card-hover:hover{ transform:translateY(-6px); box-shadow:0 24px 50px -14px rgba(0,0,0,.55); }
+    .hero-glow{ position:absolute; border-radius:50%; filter:blur(120px); pointer-events:none; }
+    ::selection{ color:#0c1017; background:#3DDC84; }
+    .chip-badge{ background:rgba(61,220,132,.12); border:1px solid rgba(61,220,132,.35); color:#3DDC84; backdrop-filter:blur(8px); }
+    .nav-link{ position:relative; }
+    .nav-link::after{ content:""; position:absolute; left:0; bottom:-2px; width:0; height:2px; background:linear-gradient(90deg,#3DDC84,#00F2FE); transition:width .2s ease; }
+    .nav-link:hover::after{ width:100%; }
+    header.masthead{ background:linear-gradient(180deg,rgba(12,16,23,0) 0%,rgba(12,16,23,.85) 100%); }
+    input,textarea{ transition:border-color .15s ease,box-shadow .15s ease; }
+    input:focus,textarea:focus{ border-color:#3DDC84; box-shadow:0 0 0 3px rgba(61,220,132,.25); outline:none; }
+    .badge-pulse{ animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite; }
+    @keyframes pulse{ 0%,100%{opacity:1} 50%{opacity:.45} }
+    .scroll-fade{ animation:fadeUp .8s ease both; }
+    @keyframes fadeUp{ from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+  </style>
+</head>
+<body class="bg-ink-950 text-ink-50 font-sans antialiased selection:bg-android-500">
+
+  <!-- DENSE NAV (shared look) -->
+  <nav class="relative z-40 mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+    <div class="glass rounded-2xl px-5 py-3.5 flex items-center justify-between shadow-lg shadow-black/20">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <span class="text-xl font-black tracking-tight bg-gradient-to-r from-android-500 to-electric-500 bg-clip-text text-transparent">Vanamstar</span>
+        <span class="hidden sm:inline-flex text-[11px] font-semibold uppercase tracking-widest text-ink-500 group-hover:text-ink-400 transition">Elite Android</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="nav-link text-ink-400 hover:text-ink-100 transition">Home</a>
+        <a href="services.html" class="nav-link text-ink-100">Services</a>
+        <a href="contact.html" class="nav-link text-ink-400 hover:text-ink-100 transition">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="hidden sm:inline-flex btn-primary rounded-xl px-5 py-2.5 text-sm font-semibold text-ink-950 shadow-lg">Free Quote</a>
+        <a href="contact.html" class="md:hidden inline-flex items-center rounded-xl px-4 py-2 text-sm font-semibold text-ink-100 bg-ink-900 ring-1 ring-inset ring-ink-700">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative overflow-hidden">
+    <div class="hero-glow bg-android-500/20" style="top:-180px;left:-160px"></div>
+    <div class="hero-glow bg-electric-500/14" style="bottom:-200px;right:-180px"></div>
+    <div class="masthead absolute left-0 right-0 top-[12%] h-[60%]"></div>
+    <div class="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 pt-14 sm:pt-24 pb-16 sm:pb-24">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 rounded-full border border-android-500/30 bg-android-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-android-500 mb-6">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.86L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Android-only, deeply
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight text-ink-50">
+          We build <span class="bg-gradient-to-r from-android-500 to-electric-500 bg-clip-text text-transparent">elite Android apps</span>
+          <br>— and only that.
+        </h1>
+        <p class="mt-5 text-lg sm:text-xl text-ink-400 max-w-2xl leading-relaxed">
+          Vanamstar is a focused Android studio. We don’t split attention across every platform. We obsess over Kotlin, native UI, performance, and Play Store delivery — so your app feels fast, refined, and unmistakably our work.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="contact.html" class="btn-primary inline-flex items-center gap-2 rounded-2xl px-7 py-4 text-sm font-semibold text-ink-950 shadow-lg">
+            Get a Free Quote
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5h-10.5A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+          </a>
+          <a href="#services" class="inline-flex items-center gap-2 rounded-2xl border border-ink-700/60 bg-ink-900/70 px-7 py-4 text-sm font-semibold text-ink-200 hover:bg-ink-800/70 hover:border-ink-500 transition">
+            View our services
+            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BENTO SERVICES GRID -->
+  <section id="services" class="relative z-10 mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 pb-20 sm:pb-28">
+    <div class="border-t border-ink-800/60 pt-12 sm:pt-20">
+      <div class="flex items-end justify-between mb-12">
+        <div>
+          <span class="text-[11px] font-semibold tracking-[0.2em] uppercase text-android-500">What we do</span>
+          <h2 class="mt-2 text-3xl sm:text-4xl font-black tracking-tight text-ink-50">Built for Android. Nothing less.</h2>
+          <p class="mt-3 text-ink-400 max-w-xl">Every service below is tuned for one platform and one goal: high-performance Android experiences that feel premium from the first tap.</p>
+        </div>
+        <div class="hidden sm:block flex items-center gap-2 text-xs text-ink-500">
+          <span class="badge-pulse inline-flex items-center gap-1.5 rounded-full bg-android-500/15 px-3 py-1.5 text-android-500 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-android-500"></span> Android-only</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+        <!-- 1. Hero bento -->
+        <div class="sm:row-span-2 lg:row-span-2 relative overflow-hidden rounded-3xl bg-gradient-to-br from-ink-900 via-ink-900 to-ink-950 ring-1 ring-inset ring-ink-800/60 p-8 sm:p-10 lg:p-12">
+          <div class="hero-glow bg-android-500/25 absolute -top-32 -right-32 w-80 h-80"></div>
+          <div class="hero-glow bg-electric-500/15 absolute -bottom-32 -left-32 w-80 h-80"></div>
+          <div class="relative">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="chip-badge rounded-full px-3 py-1 text-[11px] font-semibold tracking-wide">CORE</span>
+              <span class="text-xs text-ink-500 font-medium">Since day one</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-black tracking-tight text-ink-50 mb-4">Native Android App Development</h3>
+            <p class="text-ink-400 leading-relaxed mb-8 max-w-md">We build fully native Android apps with clean architecture, modern Kotlin, and production-grade patterns — MVVM, Clean Architecture, coroutines, Flow, and Compose where it makes sense. No cross-platform shortcuts when native is the right call.</p>
+
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-start gap-3 text-ink-400">
+                <svg class="h-5 w-5 text-android-500 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l8-10.5a.75.75 0 011.042-.919.75.75 0 01.085.102zm-anch3-11.838 8.25-8.25a.75.75 0 011.06 1.06l-8.25 8.25a.75.75 0 01-1.06-1.06l8.25-8.25a.75.75 0 01.53-.22.75.75 0 01.53.22z" clip-rule="evenodd"/></svg>
+                <span>Native Kotlin, Compose, and view-system expertise</span>
+              </li>
+              <li class="flex items-start gap-3 text-ink-400">
+                <svg class="h-5 w-5 text-android-500 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l8-10.5a.75.75 0 011.042-.919.75.75 0 01.085.102zm-anch3-11.838 8.25-8.25a.75.75 0 011.06 1.06l-8.25 8.25a.75.75 0 01-1.06-1.06l8.25-8.25a.75.75 0 01.53-.22.75.75 0 01.53.22z" clip-rule="evenodd"/></svg>
+                <span>Offline-first, sync, and background work designed in</span>
+              </li>
+              <li class="flex items-start gap-3 text-ink-400">
+                <svg class="h-5 w-5 text-android-500 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l8-10.5a.75.75 0 011.042-.919.75.75 0 01.085.102zm-anch3-11.838 8.25-8.25a.75.75 0 011.06 1.06l-8.25 8.25a.75.75 0 01-1.06-1.06l8.25-8.25a.75.75 0 01.53-.22.75.75 0 01.53.22z" clip-rule="evenodd"/></svg>
+                <span>Scalable architecture that survives growth</span>
+              </li>
+            </ul>
+
+            <div class="mt-8 flex gap-4">
+              <a href="contact.html" class="btn-primary inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold text-ink-950 shadow-lg">Start a build</a>
+              <a href="contact.html" class="inline-flex items-center rounded-xl border border-ink-700/60 bg-ink-900/70 px-5 py-2.5 text-sm font-semibold text-ink-200 hover:bg-ink-800/70 transition">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Kotlin/Java Specialist -->
+        <div class="glass rounded-3xl p-7 sm:p-8 card-hover glow-green">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-android-500/15 text-android-500">
+              <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/></svg>
+            </span>
+            <span class="chip-badge rounded-full px-2.5 py-0.5 text-[10px] font-semibold tracking-wider">EXPERT</span>
+          </div>
+          <h3 class="text-lg font-bold text-ink-50 mb-2">Kotlin / Java Specialist</h3>
+          <p class="text-ink-400 text-sm leading-relaxed">Deep fluency across the Android stack: modern Kotlin, legacy Java migrations, coroutines, Flow, Room, Retrofit, Hilt/Dagger, and sync patterns that actually stay correct under load.</p>
+          <div class="mt-5 flex flex-wrap gap-2 text-xs text-ink-500">
+            <span class="chip-badge rounded-full px-2.5 py-1">Coroutines & Flow</span>
+            <span class="chip-badge rounded-full px-2.5 py-1">Legacy Java → Kotlin</span>
+            <span class="chip-badge rounded-full px-2.5 py-1">Dependency injection</span>
+          </div>
+        </div>
+
+        <!-- 3. UI/UX for Mobile -->
+        <div class="glass rounded-3xl p-7 sm:p-8 card-hover glow-blue">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-electric-500/15 text-electric-500">
+              <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/><path d="M3 10a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2z"/><path d="M3 16a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2z"/></svg>
+            </span>
+            <span class="chip-badge rounded-full px-2.5 py-0.5 text-[10px] font-semibold tracking-wider">Design</span>
+          </div>
+          <h3 class="text-lg font-bold text-ink-50 mb-2">UI/UX Design for Mobile</h3>
+          <p class="text-ink-400 text-sm leading-relaxed">Android-aware design: Material 3 sensibility where it helps, custom systems where it matters, dark mode, accessibility, animations, and gesture flows that feel considered — not generic.</p>
+          <div class="mt-5 flex flex-wrap gap-2 text-xs text-ink-500">
+            <span class="chip-badge rounded-full px-2.5 py-1">Material 3</span>
+            <span class="chip-badge rounded-full px-2.5 py-1">Dark mode</span>
+            <span class="chip-badge rounded-full px-2.5 py-1">Accessibility</span>
+          </div>
+        </div>
+
+        <!-- 4. Optimization & Bug Fixing -->
+        <div class="glass rounded-3xl p-7 sm:p-8 card-hover">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-ink-500/15 text-ink-100">
+              <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723l.003-.001c.197-.079.466-.128.754-.147A3.066 3.066 0 0010 2.54c.81 0 1.545.14 2.195.378a3.066 3.066 0 001.745-.723l.003-.001c.197-.079.466-.128.754-.147 1.304-.117 2.19-1.153 2.19-2.47a3.066 3.066 0 00-3.066-3.066 3.066 3.066 0 00-3.066 3.066c0 1.317.886 2.352 2.19 2.47.288.02.557.07.754.147l.003.001.027.01c.53.197 1.219.42 1.948.643a3.066 3.066 0 00-2.272 4.438l.005-.004c.081-.014.52-.082.878-.175a3.066 3.066 0 003.282-2.844l.004.001c.196.079.464.127.748.146.006.002.348.075.694.167.197.049.384.039.562.01v.003l.006.003c.165.036.318.029.462.002.133-.025.268-.08.392-.15 1.102-.65 1.79-1.743 1.79-2.966 0-2.21-1.79-4-4-4s-4 1.79-4 4c0 1.223.688 2.317 1.79 2.966.124.07.259.125.392.15.144.027.297.034.462-.002l.006-.003v-.003c.178.029.365.039.562-.01.346-.092.688-.165.694-.167.284-.019.552-.067.748-.146l.004-.001c.53.144 1.24.375 1.9 1.12a3.066 3.066 0 00-.924 3.033l-.005.004a3.066 3.066 0 00-2.656.523 3.066 3.066 0 002.47 3.667c.048.032.092.057.131.08a3.066 3.066 0 002.195-1.486l.003-.001a3.066 3.066 0 00-2.234-3.012l-.004.001a3.066 3.066 0 00-1.198 3.473l.005-.004c.081-.014.52-.082.878-.175l.003-.001a3.066 3.066 0 003.282-2.844 3.066 3.066 0 00-1.765-2.347z" clip-rule="evenodd"/></svg>
+            </span>
+            <span class="chip-badge rounded-full px-2.5 py-0.5 text-[10px] font-semibold tracking-wider">PERF</span>
+          </div>
+          <h3 class="text-lg font-bold text-ink-50 mb-2">App Optimization & Bug Fixing</h3>
+          <p class="text-ink-400 text-sm leading-relaxed">If your app is slow, crashy, or memory-hungry, we profile it. Systrace, profiler, leak analysis, jank reduction, cold-start tuning, battery hygiene, and targeted bug fixes — without rewriting the whole thing.</p>
+          <div class="mt-5 flex flex-wrap gap-2 text-xs text-ink-500">
+            <span class="chip-badge rounded-full px-2.5 py-1">Jank & frame drops</span>
+            <span class="chip-badge rounded-full px-2.5 py-1">Memory & leaks</span>
+            <span class="chip-badge rounded-full px-2.5 py-1">Cold-start tuning</span>
+          </div>
+        </div>
+
+        <!-- 5. Play Store Deployment -->
+        <div class="glass rounded-3xl p-7 sm:p-8 card-hover">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-electric-500/15 text-electric-500">
+              <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 3.75C3 2.784 3.784 2 4.75 2h3c.571 0 1.094.304 1.377.784l.004.004A1.75 1.75 0 019.75 2h4.5c.966 0 1.75.784 1.75 1.75v10.5c0 .966-.784 1.75-1.75 1.75h-4.5A1.75 1.75 0 017.25 12.5h-.004a1.75 1.75 0 01-1.746-1.75v-1.5a.75.75 0 00-.75-.75H3.75c-.414 0-.75.336-.75.75v1.5A1.75 1.75 0 013 4.5v-.75zm-1.5 0A1.5 1.5 0 000 3.5v13.013a3 3 0 003 2.874V16.5A1.5 1.5 0 003 16.5h14a1.5 1.5 0 001.5-1.5V13.75A3 3 0 0017 10.75V3.5C17 2.5 16.5 2 16 2H7a5.002 5.002 0 00-5 4.998V4.391A2.5 2.5 0 014.5 7zm4.378 7.045a.75.75 0 10-1.22-.872l-1.75 2.5a.75.75 0 001.22.872l1.75-2.5zm2.621 0a.75.75 0 10-1.22-.872l-1.121 1.604a.75.75 0 001.22.872l1.121-1.604z" clip-rule="evenodd"/></svg>
+            </span>
+            <span class="chip-badge rounded-full px-2.5 py-0.5 text-[10px] font-semibold tracking-wider">DEPLOY</span>
+          </div>
+          <h3 class="text-lg font-bold text-ink-50 mb-2">Play Store Deployment Support</h3>
+          <p class="text-ink-400 text-sm leading-relaxed">From signing key management and AAB builds to store listing, rollout strategies, staged releases, and handling review rejections — we help your app land cleanly and stay there.</p>
+          <div class="mt-5 flex flex-wrap gap-2 text-xs text-ink-500">
+            <span class="chip-badge rounded-full px-2.5 py-1">Signing & AAB</span>
+            <span class="chip-badge rounded-full px-2.5 py-1">Store listing</span>
+            <span class="chip-badge rounded-full px-2.5 py-1">Staged rollouts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY VANAMSTAR PULLOUT -->
+  <section class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 pb-20 sm:pb-28">
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-ink-900 via-ink-900 to-ink-950 p-8 sm:p-12 ring-1 ring-inset ring-ink-800/60">
+      <div class="hero-glow bg-android-500/20 absolute -top-40 -right-40 w-80 h-80"></div>
+      <div class="hero-glow bg-electric-500/12 absolute -bottom-40 -left-40 w-80 h-80"></div>
+      <div class="relative grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="sm:col-span-3 lg:col-span-2">
+          <span class="text-[11px] font-semibold tracking-[0.2em] uppercase text-android-500">Why Vanamstar</span>
+          <h3 class="mt-2 text-2xl sm:text-3xl font-black tracking-tight text-ink-50 mb-3">Android is the whole game for us.</h3>
+          <p class="text-ink-400 text-base leading-relaxed max-w-xl">We don’t pretend to be a full-stack agency with a thin mobile team. Everything we do is Android. That means faster decisions, deeper expertise, and fewer surprises — because the people you talk to are the people building your app.</p>
+        </div>
+        <div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="glass-strong rounded-xl p-4 text-center">
+              <div class="text-2xl font-black text-android-500">100%</div>
+              <div class="text-xs text-ink-500 mt-1">Android focus</div>
+            </div>
+            <div class="glass-strong rounded-xl p-4 text-center">
+              <div class="text-2xl font-black text-electric-500">200+</div>
+              <div class="text-xs text-ink-500 mt-1">_apps shipped_</div>
+            </div>
+            <div class="glass-strong rounded-xl p-4 text-center">
+              <div class="text-2xl font-black text-android-500">&lt; 30ms</div>
+              <div class="text-xs text-ink-500 mt-1">Typical cold start</div>
+            </div>
+            <div class="glass-strong rounded-xl p-4 text-center">
+              <div class="text-2xl font-black text-electric-500">98%</div>
+              <div class="text-xs text-ink-500 mt-1">Client retention</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 pb-20 sm:pb-28">
+    <div class="text-center max-w-2xl mx-auto">
+      <span class="text-[11px] font-semibold tracking-[0.2em] uppercase text-android-500">Ready to build</span>
+      <h2 class="mt-2 text-3xl sm:text-4xl font-black tracking-tight text-ink-50">Let’s make your Android app elite.</h2>
+      <p class="mt-4 text-lg text-ink-400 max-w-lg mx-auto">Tell us what you’re building. We’ll reply within one business day with a candid read and a no-fluff estimate.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="contact.html" class="btn-primary inline-flex items-center gap-2 rounded-2xl px-8 py-4 text-base font-semibold text-ink-950 shadow-lg">
+          Get a Free Quote
+          <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5h-10.5A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+        </a>
+        <a href="index.html" class="inline-flex items-center gap-2 rounded-2xl border border-ink-700/60 bg-ink-900/70 px-8 py-4 text-base font-semibold text-ink-200 hover:bg-ink-800/70 hover:border-ink-500 transition">Back to home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-ink-800/60 bg-ink-950/80">
+    <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <span class="text-2xl font-black tracking-tight bg-gradient-to-r from-android-500 to-electric-500 bg-clip-text text-transparent">Vanamstar</span>
+            <span class="rounded-full bg-android-500/15 p-1.5 ring-1 ring-inset ring-android-500/30 text-android-500">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.548 14.316c-.536 2.257-2.524 3.946-5.027 3.946H13.28c.973 1.991 2.628 3.315 4.538 3.946 2.012.707 3.718 1.575 5.232 2.575.714.465 1.96.68 2.957.68.397 0 .785-.046 1.156-.123l.82-.213c.115 0 .222-.01.326-.034.105-.025.2.01.293.068.444.253.698.713.698 1.247v.922c0 1.01-.625 1.537-1.25 1.537-.424 0-.945-.405-1.25-1.163l-.114-.237c-.304-.654-.76-.907-1.473-.907-.274 0-.55.074-.74.182-.276.167-.504.432-.504.759v.007c0 .385.138.676.453.972.84.808 1.3 1.937 1.13 3.247-.247 1.925-1.537 3.293-3.484 3.923-.526.172-1.056.26-1.593.26-.826 0-1.625-.195-2.334-.51l-.916-.395c-1.217-.55-2.343-1.127-3.363-1.756l-.877-.511c-.353-.208-.6-.623-.645-1.072-.03-.284.036-.58.225-.818.19-.24.46-.38.706-.38.4 0 .685.273.701.71l.085 2.026c.007.16.018.324.034.488.063.65.826 1.105 1.74 1.105h2.84c.914 0 1.677-.455 1.74-1.105.025-.164.042-.327.049-.488l.054-2.026c.016-.437.296-.71.691-.71.268 0 .54.16.738.426.198.266.293.608.225.848-.045.448-.29 1.257-.782 1.555l-.937.602c-1.092.71-2.426 1.327-3.976 1.742l-.924.247c-.984.271-1.882.502-2.614.673l-.592.134c-.267.061-.494.185-.666.355-.172.17-.298.368-.359.578l-.242 3.391c-.079 1.094-.93 1.761-1.945 1.761H11.293zM15.09 13.96c.444 0 .845-.156 1.194-.39l.596-.418-1.144-2.694-.596.418c.35.234.746.39 1.194.39z"/></svg>
+            </span>
+          </div>
+          <p class="text-sm text-ink-400 leading-relaxed max-w-xs">Elite, native Android development focused on performance, polish, and real user delight.</p>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-semibold tracking-widest uppercase text-ink-500 mb-4">Services</h3>
+          <ul class="space-y-3 text-sm text-ink-400">
+            <li><a href="services.html" class="hover:text-ink-100 transition">Native Android Development</a></li>
+            <li><a href="services.html" class="hover:text-ink-100 transition">Kotlin / Java Specialist</a></li>
+            <li><a href="services.html" class="hover:text-ink-100 transition">UI/UX for Mobile</a></li>
+            <li><a href="services.html" class="hover:text-ink-100 transition">App Optimization</a></li>
+            <li><a href="services.html" class="hover:text-ink-100 transition">Play Store Deployment</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-semibold tracking-widest uppercase text-ink-500 mb-4">Company</h3>
+          <ul class="space-y-3 text-sm text-ink-400">
+            <li><a href="index.html" class="hover:text-ink-100 transition">Home</a></li>
+            <li><a href="services.html" class="hover:text-ink-100 transition">Services</a></li>
+            <li><a href="contact.html" class="hover:text-ink-100 transition">Contact</a></li>
+            <li><a href="contact.html#faq" class="hover:text-ink-100 transition">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-semibold tracking-widest uppercase text-ink-500 mb-4">Reach us</h3>
+          <ul class="space-y-3 text-sm text-ink-400">
+            <li class="flex items-center gap-2">
+              <svg class="h-4 w-4 text-android-500 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M3.194 12.286c-.003.074-.014.148-.023.222-.059.44-.133.885-.215 1.328-.057.34-.127.68-.21.997-.063.242-.146.445-.232.593-.117.194-.265.282-.422.266-.328-.035-.657-.18-.98-.414-.322-.232-.528-.557-.638-.894-.11-.336-.11-.69 0-1.023.11-.327.302-.621.558-.876.256-.256.442-.49.595-.798.153-.307.256-.664.305-1.02.051-.36-.066-.714-.253-.996-.188-.282-.431-.517-.724-.692-.292-.176-.598-.31-.906-.4-.308-.09-.592-.122-.86-.087-.269.035-.534.093-.76.242-.4.27-.65 1.095-.65 1.095z" clip-rule="evenodd"/></path></svg>
+              <span>reachoutus@vanamstar.com</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="h-4 w-4 text-electric-500 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h5A1.5 1.5 0 0110 3.5v6A1.5 1.5 0 018.5 11h-5A1.5 1.5 0 012 9.5v-6zM3.5 4a.5.5 0 00-.5.5v5a.5.5 0 00.5.5h5a.5.5 0 00.5-.5v-5a.5.5 0 00-.5-.5h-5z" clip-rule="evenodd"/></svg>
+              <a href="tel:9095774483" class="hover:text-ink-100 transition">+91 9095774483</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-ink-500 border-t border-ink-800/60 pt-6">
+        <span>&copy; 2026 Vanamstar. All rights reserved.</span>
+        <div class="flex gap-5">
+          <a href="#" class="hover:text-ink-200 transition">Privacy</a>
+          <a href="#" class="hover:text-ink-200 transition">Terms</a>
+          <a href="#" class="hover:text-ink-200 transition">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

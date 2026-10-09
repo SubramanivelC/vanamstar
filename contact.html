@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Vanamstar Android App Development</title>
+  <meta name="description" content="Reach Vanamstar for Android app development. Email reachoutus@vanamstar.com or call +91 9095774483. A clear conversation, then we build.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+  <style>
+    html,body{margin:0;padding:0}
+    .glass{
+      background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border:1px solid rgba(255,255,255,0.06);
+    }
+    .glow-green{
+      box-shadow: 0 0 24px -4px rgba(61,220,132,0.35), 0 0 80px -8px rgba(61,220,132,0.18);
+    }
+    .glow-blue{
+      box-shadow: 0 0 24px -4px rgba(0,242,254,0.35), 0 0 80px -8px rgba(0,242,254,0.18);
+    }
+    .btn-primary{
+      background: linear-gradient(135deg, #3DDC84 0%, #00F2FE 100%);
+      box-shadow: 0 6px 20px -6px rgba(61,220,132,0.55);
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+    .btn-primary:hover{
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 30px -8px rgba(61,220,132,0.7);
+    }
+    .btn-primary:active{
+      transform: translateY(0) scale(0.99);
+    }
+    .chip-badge{
+      background: rgba(61,220,132,0.12);
+      border:1px solid rgba(61,220,132,0.35);
+      color:#3DDC84;
+      backdrop-filter: blur(8px);
+    }
+    .nav-link{position:relative;}
+    .nav-link::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-2px;
+      width:0;
+      height:2px;
+      background:linear-gradient(90deg,#3DDC84,#00F2FE);
+      transition:width 0.2s ease;
+    }
+    .nav-link:hover::after{width:100%;}
+    .hero-glow{position:absolute;border-radius:50%;filter:blur(120px);pointer-events:none;}
+    ::selection{color:#0c1017;background:#3DDC84;}
+    .accent-line{height:2px;background:linear-gradient(90deg,transparent,rgba(61,220,132,0.6),rgba(0,242,254,0.6),transparent);}
+  </style>
+</head>
+<body class="bg-ink-950 text-ink-50 font-sans antialiased selection:bg-android-500">
+
+  <!-- NAV -->
+  <nav class="relative z-40 mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+    <div class="glass rounded-2xl px-5 py-3.5 flex items-center justify-between shadow-lg shadow-black/20">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <span class="text-xl font-black tracking-tight bg-gradient-to-r from-android-500 to-electric-500 bg-clip-text text-transparent">Vanamstar</span>
+        <span class="hidden sm:inline-flex text-[11px] font-semibold uppercase tracking-widest text-ink-500 group-hover:text-ink-400 transition">Elite Android</span>
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="nav-link text-ink-400 hover:text-ink-100 transition">Home</a>
+        <a href="services.html" class="nav-link text-ink-400 hover:text-ink-100 transition">Services</a>
+        <a href="contact.html" class="nav-link text-ink-100">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="hidden sm:inline-flex btn-primary rounded-xl px-5 py-2.5 text-sm font-semibold text-ink-950 shadow-lg">Free Quote</a>
+        <a href="contact.html" class="md:hidden inline-flex items-center rounded-xl px-4 py-2 text-sm font-semibold text-ink-100 bg-ink-900 ring-1 ring-inset ring-ink-700">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative overflow-hidden">
+    <div class="hero-glow bg-android-500/20" style="top:-120px;left:-110px"></div>
+    <div class="hero-glow bg-electric-500/14" style="bottom:-160px;right:-130px"></div>
+    <div class="masthead absolute left-0 right-0 top-[12%] h-[60%]" style="background:linear-gradient(180deg,rgba(12,16,23,0) 0%,rgba(12,16,23,.85) 100%)"></div>
+    <div class="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 pt-10 sm:pt-14 pb-8 sm:pb-10">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 rounded-full border border-android-500/30 bg-android-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-android-500 mb-4">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          We reply fast
+        </div>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight tracking-tight text-ink-50">
+          Let’s talk about<br>your <span class="bg-gradient-to-r from-android-500 to-electric-500 bg-clip-text text-transparent">Android app</span>.
+        </h1>
+        <p class="mt-4 text-base sm:text-lg text-ink-400 max-w-xl leading-relaxed">Whether you have a half-formed idea or a shipped product that needs love, we’re ready to have a straightforward conversation about what you’re building and how we can help.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTACT: compact, uncluttered -->
+  <section class="relative z-10 mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 pb-14 sm:pb-18">
+    <div class="border-t border-ink-800/60 pt-8 sm:pt-10">
+      <div class="grid gap-8 lg:grid-cols-5">
+        <div class="lg:col-span-2">
+          <div class="glass-strong rounded-2xl p-6 sm:p-7 glow-green">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="text-[11px] font-semibold tracking-[0.2em] uppercase text-android-500">Get in touch</span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-black tracking-tight text-ink-50 mb-2">You can reach us directly.</h2>
+            <p class="text-ink-400 text-sm sm:text-base mb-6">Drop a message, or just send us a note. We typically reply within one business day.</p>
+
+            <div class="flex flex-col gap-4">
+              <a href="mailto:reachoutus@vanamstar.com" class="inline-flex items-center gap-3 rounded-xl border border-android-500/30 bg-android-500/10 px-4 py-3.5 text-ink-100 hover:text-android-500 transition">
+                <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-android-500/20 text-android-500">
+                  <svg class="h-4.5 w-4.5" viewBox="0 0 20 20" fill="currentColor"><path d="M3.194 12.286c-.003.074-.014.148-.023.222-.059.44-.133.885-.215 1.328-.057.34-.127.68-.21.997-.063.242-.146.445-.232.593-.117.194-.265.282-.422.266-.328-.035-.657-.18-.98-.414-.322-.232-.528-.557-.638-.894-.11-.336-.11-.69 0-1.023.11-.327.302-.621.558-.876.256-.256.442-.49.595-.798.153-.307.256-.664.305-1.02.051-.36-.066-.714-.253-.996-.188-.282-.431-.517-.724-.692-.292-.176-.598-.31-.906-.4-.308-.09-.592-.122-.86-.087-.269.035-.534.093-.76.242-.4.27-.65 1.095-.65 1.095z" clip-rule="evenodd"/></path></svg>
+                </span>
+                <span class="text-base font-medium">reachoutus@vanamstar.com</span>
+              </a>
+
+              <a href="tel:9095774483" class="inline-flex items-center gap-3 rounded-xl border border-electric-500/30 bg-electric-500/10 px-4 py-3.5 text-ink-100 hover:text-electric-500 transition">
+                <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-electric-500/20 text-electric-500">
+                  <svg class="h-4.5 w-4.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h5A1.5 1.5 0 0110 3.5v6A1.5 1.5 0 018.5 11h-5A1.5 1.5 0 012 9.5v-6zM3.5 4a.5.5 0 00-.5.5v5a.5.5 0 00.5.5h5a.5.5 0 00.5-.5v-5a.5.5 0 00-.5-.5h-5z" clip-rule="evenodd"/></svg>
+                </span>
+                <span class="text-base font-medium">+91 9095774483</span>
+                <span class="text-xs text-ink-500">Mon–Fri, 9:00–18:00 IST</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="mt-5 rounded-2xl bg-ink-900/70 p-5 sm:p-6 border border-ink-800/60">
+            <h3 class="text-sm font-semibold tracking-wide text-ink-100 mb-3">What we need from you</h3>
+            <ul class="space-y-2.5 text-sm text-ink-400">
+              <li class="flex items-start gap-2.5">
+                <svg class="h-4 w-4 text-android-500 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l8-10.5a.75.75 0 011.042-.919.75.75 0 01.085.102zm-anch3-11.838 8.25-8.25a.75.75 0 011.06 1.06l-8.25 8.25a.75.75 0 01-1.06-1.06l8.25-8.25a.75.75 0 01.53-.22.75.75 0 01.53.22z" clip-rule="evenodd"/></path></svg>
+                <span>What are you trying to build — even roughly?</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="h-4 w-4 text-android-500 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l8-10.5a.75.75 0 011.042-.919.75.75 0 01.085.102zm-anch3-11.838 8.25-8.25a.75.75 0 011.06 1.06l-8.25 8.25a.75.75 0 01-1.06-1.06l8.25-8.25a.75.75 0 01.53-.22.75.75 0 01.53.22z" clip-rule="evenodd"/></path></svg>
+                <span>What’s the timeline you’re hoping for?</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="h-4 w-4 text-android-500 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l8-10.5a.75.75 0 011.042-.919.75.75 0 01.085.102zm-anch3-11.838 8.25-8.25a.75.75 0 011.06 1.06l-8.25 8.25a.75.75 0 01-1.06-1.06l8.25-8.25a.75.75 0 01.53-.22.75.75 0 01.53.22z" clip-rule="evenodd"/></path></svg>
+                <span>Any existing app, designs, or constraints we should know about?</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 flex flex-col justify-center">
+          <div class="rounded-3xl bg-gradient-to-br from-ink-900 via-ink-900 to-ink-950 p-7 sm:p-9 lg:p-10 ring-1 ring-inset ring-ink-800/60">
+            <div class="hero-glow bg-android-500/20 absolute top-0 right-0 w-64 h-64 -z-10"></div>
+            <div class="hero-glow bg-electric-500/14 absolute bottom-0 left-0 w-64 h-64 -z-10"></div>
+
+            <div class="relative">
+              <div class="flex items-center gap-2 mb-4">
+                <span class="text-[11px] font-semibold tracking-[0.2em] uppercase text-android-500">Why Vanamstar</span>
+              </div>
+              <h2 class="text-xl sm:text-2xl font-black tracking-tight text-ink-50 mb-3">One clear conversation, then we build.</h2>
+              <p class="text-ink-400 text-sm sm:text-base leading-relaxed max-w-xl mb-6">Tell us what you’re building. If we’re a fit, we’ll reply with a candid read and a no-fluff estimate — usually within one business day.</p>
+
+              <div class="flex flex-wrap gap-3 mb-6">
+                <a href="mailto:reachoutus@vanamstar.com" class="inline-flex items-center gap-2 rounded-xl bg-android-500/15 px-4 py-2.5 text-sm font-semibold text-android-500 border border-android-500/30 hover:bg-android-500/25 transition">
+                  <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5h-10.5A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+                  Email us
+                </a>
+                <a href="tel:9095774483" class="inline-flex items-center gap-2 rounded-xl bg-electric-500/15 px-4 py-2.5 text-sm font-semibold text-electric-500 border border-electric-500/30 hover:bg-electric-500/25 transition">
+                  <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5h-10.5A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+                  Call us
+                </a>
+              </div>
+
+              <div class="flex flex-wrap gap-6 text-sm text-ink-500">
+                <div class="flex items-center gap-2">
+                  <svg class="h-4 w-4 text-android-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l8-10.5a.75.75 0 011.042-.919.75.75 0 01.085.102zm-anch3-11.838 8.25-8.25a.75.75 0 011.06 1.06l-8.25 8.25a.75.75 0 01-1.06-1.06l8.25-8.25a.75.75 0 01.53-.22.75.75 0 01.53.22z" clip-rule="evenodd"/></path></svg>
+                  <span class="font-medium text-ink-200">Reply within 1 business day</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="h-4 w-4 text-electric-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l8-10.5a.75.75 0 011.042-.919.75.75 0 01.085.102zm-anch3-11.838 8.25-8.25a.75.75 0 011.06 1.06l-8.25 8.25a.75.75 0 01-1.06-1.06l8.25-8.25a.75.75 0 01.53-.22.75.75 0 01.53.22z" clip-rule="evenodd"/></path></svg>
+                  <span class="font-medium text-ink-200">No spam, no gotchas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 flex flex-col gap-4">
+            <a href="mailto:reachoutus@vanamstar.com" class="btn-primary inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold text-ink-950 shadow-lg w-full sm:w-auto">
+              <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5h-10.5A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+              Send us an email
+            </a>
+            <a href="tel:9095774483" class="inline-flex items-center justify-center gap-2 rounded-xl border border-ink-700/60 bg-ink-900/80 px-6 py-3.5 text-sm font-semibold text-ink-100 hover:bg-ink-800/80 transition w-full sm:w-auto">
+              <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.362 1.093a.75.75 0 00-1.234.52l-3.5 7.5a.75.75 0 00.962.935h8.105a.75.75 0 00.962-.935l-3.5-7.5a.75.75 0 00-1.234-.52zm0 4.062a.75.75 0 00-1.234.52l-2.25 21.2a.75.75 0 00.962.935h14.5a.75.75 0 00.962-.935l-2.25-21.2a.75.75 0 00-1.234-.52z" clip-rule="evenodd"/></svg>
+              Call +91 9095774483
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (light) -->
+  <footer class="border-t border-ink-800/60 bg-ink-950/80">
+    <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 py-8 sm:py-9">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <span class="text-lg font-black tracking-tight bg-gradient-to-r from-android-500 to-electric-500 bg-clip-text text-transparent">Vanamstar</span>
+          <span class="text-sm text-ink-500">&copy; 2026 Vanamstar. All rights reserved.</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-ink-500">
+          <a href="index.html" class="hover:text-ink-200 transition">Home</a>
+          <a href="services.html" class="hover:text-ink-200 transition">Services</a>
+          <a href="contact.html" class="hover:text-ink-200 transition">Contact</a>
+          <span>·</span>
+          <a href="mailto:reachoutus@vanamstar.com" class="hover:text-ink-200 transition">reachoutus@vanamstar.com</a>
+          <a href="tel:9095774483" class="hover:text-ink-200 transition">+91 9095774483</a>
+          <span>·</span>
+          <a href="#" class="hover:text-ink-200 transition">Privacy</a>
+          <a href="#" class="hover:text-ink-200 transition">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      document.querySelectorAll('a[href^="#"]').forEach(function(a){
+        a.addEventListener('click', function(e){
+          var id = a.getAttribute('href');
+          if(!id || id.length<2) return;
+          var el = document.querySelector(id);
+          if(el){
+            e.preventDefault();
+            el.scrollIntoView({behavior:'smooth', block:'start'});
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
